@@ -62,7 +62,11 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  let itemInCart = false;
+
+  for (let i = 0, length = cart.length; i < length; i++) {
+    array[i]
+  }
 }
 
 function placeOrder(cardNumber) {
