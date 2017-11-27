@@ -43,11 +43,18 @@ function viewCart() {
       itemsAndPrices = itemsAndPrices.join(" and ");
   }
 
-  console.log(`In your cart, you have ${itemsAndPrices}.`);
+  console.log(`In your cart, you have ${itemsAndPrices}.`); 
 }
 
 function total() {
-  // write your code here
+  let total = 0;
+
+  for (let i = 0, length = cart.length; i < length; i++) {
+    for (let item in cart[i]) {
+      total += cart[i][item];
+    }      
+  }
+  return total;
 }
 
 function removeFromCart(item) {
