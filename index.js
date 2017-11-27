@@ -40,8 +40,7 @@ function viewCart() {
     case 1:
       break;
     case 2:
-      itemsAndPrices = itemsAndPrices.join(" and ");
-      
+      itemsAndPrices = itemsAndPrices.join(" and ");    
   }
 }
 
