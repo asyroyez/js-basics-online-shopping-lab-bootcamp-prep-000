@@ -43,7 +43,7 @@ function viewCart() {
       itemsAndPrices = itemsAndPrices.join(" and ");
   }
 
-  console.log(`In your cart, you have ${itemsAndPrices}.`); 
+  console.log(`In your cart, you have ${itemsAndPrices}.`);
 }
 
 function total() {
@@ -52,7 +52,7 @@ function total() {
   for (let i = 0, length = cart.length; i < length; i++) {
     for (let item in cart[i]) {
       total += cart[i][item];
-    }      
+    }
   }
   return total;
 }
